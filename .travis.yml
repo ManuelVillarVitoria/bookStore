@@ -1,3 +1,10 @@
 language: java
 jdk:
   - openjdk11
+  -
+deploy:
+  provider: heroku
+  api_key:
+    secure: $HEROKU_TOKEN
+
+  app: "books-demo-store"
