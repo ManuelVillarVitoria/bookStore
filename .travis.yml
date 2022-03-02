@@ -1,3 +1,5 @@
+dist: focal
+
 language: java
 jdk:
   - openjdk11
@@ -8,4 +10,4 @@ script:
 deploy:
   provider: heroku
   api_key: $HEROKU_TOKEN
-  app: "books-demo-store-app"
+  app: "books-demo-store"
