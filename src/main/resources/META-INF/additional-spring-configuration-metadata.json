@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "spring.jpa.databse",
+      "type": "java.lang.String",
+      "description": "Description for spring.jpa.databse."
+    },
+    {
+      "name": "spring.hibernate.ddl-auto",
+      "type": "java.lang.String",
+      "description": "Description for spring.hibernate.ddl-auto."
+    },
+    {
+      "name": "spring.datasource.hikari.platform",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.hikari.platform."
+    }
+  ] }
