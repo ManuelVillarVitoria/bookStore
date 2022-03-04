@@ -4,8 +4,10 @@ language: java
 jdk:
   - openjdk11
 
+before_script:
+  - chmod a+x gradlew
+
 script:
-      - chmod a+x gradlew
       - ./gradlew build
 
 deploy:
