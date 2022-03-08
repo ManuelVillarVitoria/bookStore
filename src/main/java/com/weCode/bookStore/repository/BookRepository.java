@@ -7,5 +7,6 @@ import java.util.List;
 import java.util.UUID;
 
 public interface BookRepository extends CrudRepository<Book, UUID> {
-   /* List<Book> findBookByTitleAndAndDescription(String title, String description);*/
+   List<Book> findBooksByTitle(String Title);
+
 }
