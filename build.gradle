@@ -4,6 +4,8 @@ plugins {
 	id 'java'
 }
 
+apply plugin: 'jacoco'
+
 group = 'com.weCode'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
@@ -35,3 +37,18 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+jacocoTestCoverageVerification {
+	violationRules {
+		rules {
+			limit {
+				counter = 'LINE'
+				value = 'COVEREDRATIO'
+				minimum = 1.0
+			}
+		}
+	}
+}
+
+test.finalizedBy jacocoTestReport
+check.dependsOn jacocoTestCoverageVerification
