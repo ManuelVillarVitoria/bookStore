@@ -33,6 +33,5 @@ public class BookRepositoryTest {
     void shouldReturnOneBookWhenTitleIsTestTitle() {
         List<Book> test_title = bookRepository.findBooksByTitle("test title");
         Assertions.assertEquals(test_title.size(), 1);
-
     }
 }

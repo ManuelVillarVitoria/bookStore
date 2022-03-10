@@ -1,7 +1,6 @@
 package com.weCode.bookStore.controller;
 
 import com.weCode.bookStore.dto.BookDto;
-import com.weCode.bookStore.model.Book;
 import com.weCode.bookStore.service.BookService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
