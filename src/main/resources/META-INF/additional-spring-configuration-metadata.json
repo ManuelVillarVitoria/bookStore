@@ -14,5 +14,15 @@
       "name": "spring.datasource.hikari.platform",
       "type": "java.lang.String",
       "description": "Description for spring.datasource.hikari.platform."
+    },
+    {
+      "name": "spring.sql.mvc.pathmatch.matching-strategy",
+      "type": "java.lang.String",
+      "description": "Description for spring.sql.mvc.pathmatch.matching-strategy."
+    },
+    {
+      "name": "spring.documentation.auto-startup",
+      "type": "java.lang.String",
+      "description": "Description for spring.documentation.auto-startup."
     }
   ] }
