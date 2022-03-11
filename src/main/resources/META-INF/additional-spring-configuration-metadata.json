@@ -24,5 +24,10 @@
       "name": "spring.documentation.auto-startup",
       "type": "java.lang.String",
       "description": "Description for spring.documentation.auto-startup."
+    },
+    {
+      "name": "spring.datasource.hikari.initialization-mode",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.hikari.initialization-mode."
     }
   ] }

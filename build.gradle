@@ -24,6 +24,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web:2.6.4'
 	implementation 'org.assertj:assertj-core:3.22.0'
 	implementation 'org.modelmapper:modelmapper:3.0.0'
+	implementation 'org.postgresql:postgresql:42.3.3'
 	implementation 'org.mockito:mockito-core:4.3.1'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.6.4'
     implementation 'org.junit.platform:junit-platform-launcher:1.8.2'
