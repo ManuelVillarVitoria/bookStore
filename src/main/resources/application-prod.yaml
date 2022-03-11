@@ -19,7 +19,7 @@ spring:
     ###
     #Activate it to run the test cases
     ###
-    defer-datasource-initialization: true
+    #defer-datasource-initialization: true
 
   flyway:
     baseline-on-migrate: true
