@@ -41,6 +41,6 @@ public class UserController {
         UserDetails userDetails = userDetailService.loadUserByUsername(request.getEmail());
         String token = jwtUtil.generateToken(userDetails);
 
-        return ResponseEntity.ok(new AuthenticationResponse(token));
+        return ResponseEntity.ok(new AuthenticationResponse("Bearer "+ token));
     }
 }

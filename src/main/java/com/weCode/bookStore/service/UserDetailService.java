@@ -22,6 +22,6 @@ public class UserDetailService implements UserDetailsService {
     //function which is used by spring security for loading user from db
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        return new User("peter", passwordEncoder.encode("password"), new ArrayList<>());
+        return new User("peter@gmail.com", passwordEncoder.encode("password"), new ArrayList<>());
     }
 }
