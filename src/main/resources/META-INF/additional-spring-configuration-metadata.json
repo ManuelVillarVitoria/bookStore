@@ -29,5 +29,10 @@
       "name": "spring.datasource.hikari.initialization-mode",
       "type": "java.lang.String",
       "description": "Description for spring.datasource.hikari.initialization-mode."
+    },
+    {
+      "name": "spring.jpa.driver-class-name",
+      "type": "java.lang.String",
+      "description": "Description for spring.jpa.driver-class-name."
     }
   ] }

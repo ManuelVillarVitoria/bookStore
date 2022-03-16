@@ -21,7 +21,7 @@ public class BookRepositoryTest {
     private BookRepository bookRepository;
 
     @Test
-    @Sql(scripts = {"classpath:InsertInitialBookRecordForTest.sql"})
+    @Sql({"/InsertInitialBookRecordForTest.sql"})
       void shouldAbleToFetchAllBooksInDB() {
         Iterable<Book> all = bookRepository.findAll();
         Long totalBookCount = StreamSupport.stream(all.spliterator(),false).count();
@@ -29,7 +29,7 @@ public class BookRepositoryTest {
     }
 
     @Test
-    @Sql(scripts = {"classpath:InsertInitialBookRecordForTest.sql"})
+    @Sql({"/InsertInitialBookRecordForTest.sql"})
     void shouldReturnOneBookWhenTitleIsTestTitle() {
         List<Book> test_title = bookRepository.findBooksByTitle("test title");
         Assertions.assertEquals(test_title.size(), 1);
